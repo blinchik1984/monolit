@@ -1,0 +1,5 @@
+/vendor
+*.lock
+.idea/
+/services/content
+/services/target

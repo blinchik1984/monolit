@@ -1,0 +1,4 @@
+php_value memory_limit 64M
+php_value display_errors on
+RewriteEngine on
+RewriteBase /

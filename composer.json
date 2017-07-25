@@ -1,0 +1,33 @@
+{
+  "require": {
+    "wikimedia/composer-merge-plugin": "dev-master",
+    "symfony/yaml": "~3.0",
+    "symfony/dependency-injection": "~3.3",
+    "symfony/expression-language": "*",
+    "symfony/framework-bundle": "*",
+    "dunaev/adserver-engine": "dev-master",
+    "dunaev/adserver-routing": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Controller\\" : "src/Controller"
+    }
+  },
+  "classmap": [
+    "src/Controller"
+  ],
+  "extra": {
+    "merge-plugin": {
+      "include": [
+        "services/*/composer.json"
+      ],
+      "recurse": true,
+      "replace": false,
+      "ignore-duplicates": false,
+      "merge-dev": true,
+      "merge-extra": false,
+      "merge-extra-deep": false,
+      "merge-scripts": false
+    }
+  }
+}
