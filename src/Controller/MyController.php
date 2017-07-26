@@ -26,6 +26,6 @@ class MyController extends Controller
 
     public function index(): Response
     {
-        return $this->get('TargetService')->getTarget();
+        return $this->get('targetClientApi')->request(Request::create('/target/foo'));
     }
 }

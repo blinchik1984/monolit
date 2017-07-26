@@ -1,1 +1,3 @@
 services:
+  targetClientApi:
+    class: AdServer\ClientLocal\Client
